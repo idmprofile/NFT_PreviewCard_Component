@@ -1,4 +1,155 @@
-body {
-  background-color: red;
+.main {
+  background-color: #0d192b;
+  color: #8bacda;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  background-color: #0c1627;
+}
+
+.card_container .card {
+  padding: 1.5rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 24px 16px 3px #09121f;
+          box-shadow: 0 24px 16px 3px #09121f;
+  background-color: #14253d;
+  width: 300px;
+}
+
+.card .image_container {
+  position: relative;
+}
+
+.card .image_container img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: .75rem;
+}
+
+.card .image_container .image--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: .75rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(37, 223, 236, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: opacity .55s;
+  transition: opacity .55s;
+}
+
+.card .image_container .image--overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: .75rem;
+}
+
+.card h2 {
+  color: white;
+  font-weight: 600;
+}
+
+.card h2:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.card hr {
+  background-color: #8bacda;
+  margin: 20px 0;
+}
+
+.card .detail_container {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .detail_container div {
+  position: relative;
+  font-weight: 600;
+}
+
+.card .detail_container div svg {
+  position: relative;
+  top: 3px;
+  margin-right: 2px;
+}
+
+.card .detail_container .left {
+  color: #00fff7;
+}
+
+.card .creator_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.card .creator_container div {
+  font-weight: 300;
+}
+
+.card .creator_container div img {
+  width: 100%;
+  height: 30px;
+}
+
+.card .creator_container div:nth-child(1) {
+  margin-right: 12px;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 30px;
+}
+
+.card .creator_container div:nth-child(2) {
+  margin-right: 4px;
+}
+
+.card .creator_container div:nth-child(3) {
+  color: white;
+}
+
+.card .creator_container div:nth-child(3):hover {
+  color: #00fff7;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
